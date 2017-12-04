@@ -6,5 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Awesome Shop</title>
     <link rel="stylesheet" href="/public/css/bulma.css">
+    <link rel="stylesheet" href="/public/css/app.css">
 </head>
 <body>

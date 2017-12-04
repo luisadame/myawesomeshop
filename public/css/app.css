@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+.products {
+    margin: 1em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.product {
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgba(0,0,0, 0.7);
+    transition: all 250ms;
+}
+    .product:hover {
+        box-shadow: 0 1px 4px rgba(0,0,0,0.8);
+    }
+    .product .card {
+        box-shadow: none;
+    }
+    .product .title {
+        margin: 0;
+    }
+    .product a {
+        color: inherit;    
+    }

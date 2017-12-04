@@ -1,11 +1,19 @@
 <?php
-include "./views/partials/head.php";
-include "./views/partials/header.php";
+include './views/partials/head.php';
+include './views/partials/header.php';
+include './models/Product.php';
 
-$db = new SQLite3('./database/shop.sqlite');
-$result = $db->query('SELECT * FROM products;');
-var_dump($result->fetchArray());
-
+$products = Product::all();
 ?>
-    
-<?php include "./views/partials/bottom.php"; ?>
+<div class="container">
+    <div class="products">
+        <?php
+            foreach ($products as $product) {
+                include './views/components/product.php';
+            }
+        ?>        
+    </div>
+</div>
+<?php
+include './views/partials/bottom.php';
+?>

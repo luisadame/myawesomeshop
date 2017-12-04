@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^([^/.]+)$ public/$1.php [L]
+RewriteRule ^([^/.]+)$ $1.php [L]
