@@ -14,4 +14,4 @@ Makes use of bulma css framework to make the work more agile.
     -   It is important to note that this project uses the **sqlite3 and php_pdo_sqlite extensions**. They are easily enabled thorugh the php configuration because they come bundled with php.
 
 ## License
-[MIT License](/blob/master/LICENSE)
+[MIT License](/LICENSE)
