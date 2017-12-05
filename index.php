@@ -5,15 +5,17 @@ include './models/Product.php';
 
 $products = Product::all();
 ?>
-<div class="container">
-    <div class="products">
-        <?php
-            foreach ($products as $product) {
-                include './views/components/product.php';
-            }
-        ?>        
+<section class="section">
+    <div class="container">
+        <div class="products">
+            <?php
+                foreach ($products as $product) {
+                    include './views/components/product.php';
+                }
+            ?>        
+        </div>
     </div>
-</div>
+</section>
 <?php
 include './views/partials/bottom.php';
 ?>
